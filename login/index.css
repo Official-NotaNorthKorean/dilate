@@ -60,6 +60,15 @@ a:link {
 a:hover {
 	text-decoration: underline;
 }
+a:visited {
+	text-decoration: none;
+}
+p {
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin: 0;
+	font-size: 100%;
+}
 .login-button {
 	display: flex;
 	flex-direction: column;
@@ -93,4 +102,20 @@ a:hover {
 	border: 1px #00004d; 
 	justify-content: center;
 	margin-bottom: 20px;
+	border: 2px #0000004d;
 }
+button:hover {
+	background-color: #4752c4;
+	border: 2px #4752c4;
+}
+button:active {
+	background-color: #4752c4;
+	border: 2px #4752c4;
+}
+input.form-control:hover {
+	border: 2px #0000004d;
+}
+input.form-control:active {
+	border: 2px #00aff4;
+}
+
