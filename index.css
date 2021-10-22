@@ -1,0 +1,48 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background-color: #36393f;
+	color: #eee;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+#nav {
+	float: left;
+	border-right: 1px;
+	width: 10%;
+	background-color: #202225;
+	position: fixed;
+	overflow: auto;
+	height: 100%;
+}
+
+#content {
+	flex-direction: column;
+	height: 100%;
+	width: 90%;
+	background-color: #36393f;
+	float: right;
+	overflow: auto;
+}
+
+#sidebar {
+	background-color: #2f3136;
+	height: 100%;
+	width: 300px;
+	flex-direction: column;
+	display: flex;
+/*	overflow: auto; */
+}
+
+#account {
+	margin-top: auto; 
+	height: 7%;
+	background-color: #292b2f;
+	padding-left: 2%;
+	align-items: center;
+}
+
