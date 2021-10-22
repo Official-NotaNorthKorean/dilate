@@ -1,0 +1,36 @@
+html {
+	background-color: #202225;
+	align-items: center;
+]
+body {
+	align-items: center;
+	justify-content: center;
+}
+.loginbox {
+	display: flex;
+	flex-direction: column;
+	height: 342.5px;
+	width: 480px;
+/*	background-color: #36393f; */
+	background-color: #fff;
+	color: #72767d;
+	align-content: center;
+	border: 5px solid orange;
+	border-radius: 5px;
+}
+.welcome {
+	display: flex;
+	flex-direction: column;
+	height: 30px;
+	width: 169.95px;
+	background: transparent;
+	border: 2px solid white;
+	color: white;
+}
+.login-button {
+	display: flex;
+	flex-direction: column;
+	height: 44px;
+	width: 100%;
+	background-color: #5865f2;
+}

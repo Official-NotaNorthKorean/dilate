@@ -1,0 +1,90 @@
+html {
+	background-color: #202225;
+	align-items: center;
+}
+body {
+}
+.loginbox {
+	display: flex;
+	flex-direction: column;
+	height: 406.5px;
+	width: 480px;
+	position: static;
+	background-color: #36393f;
+	border: 1px solid orange;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+}
+.bigbox {
+	display: flex;
+	flex-direction: column;
+	height: 342.5px;
+	width: 416px;
+	border: 1px solid green;
+}
+.wel0 {
+	font-weight: 600;
+	color: white;
+	font-size: 24px;
+	position: static;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 30px;
+	border: 1px solid red;
+}
+.wel1 {
+	color: #b9bbbe;
+	font-size: 16px;
+	width: auto;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	border: 1px solid green;
+}
+.form {
+	display: flex;
+	flex-grow: 0;
+	flex-direction: column;
+	text-align: left;
+	color: #b9bbbe;
+	font-size: 12px;
+	line-height: 16px;
+	height: 264.5px;
+	width: auto;
+	margin-top: 20px;
+}
+.login-button {
+	display: flex;
+	flex-direction: column;
+	background-color: #5865f2;
+	width: 100%;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom: 8px;
+	height: 40px;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	border: 2px #5865f2;
+	border-radius: 5px;
+}
+.form-control {
+	display: flex;
+	flex-direction: column;
+	color: #b9bbbe;
+	background-color: #303339;
+	border: 2px #222428;
+	border-radius: 5px;
+	height: 44px;
+	width: 100%;
+	padding-top: 10px;
+	font-size: 16px;
+	line-height: 1;
+/*	border: 1px #00004d; */
+	justify-content: center;
+	margin-bottom: 20px;
+}
