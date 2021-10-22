@@ -46,3 +46,7 @@ body {
 	align-items: center;
 }
 
+#avatar {
+	flex: left;
+	border-radius: 50%;
+}
