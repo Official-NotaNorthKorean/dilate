@@ -7,11 +7,12 @@ body {
 .loginbox {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 0;
+	flex-shrink: 0;
 	height: 406.5px;
 	width: 480px;
 	position: static;
 	background-color: #36393f;
-	border: 1px solid orange;
 	border-radius: 5px;
 	align-items: center;
 	justify-content: center;
@@ -19,11 +20,14 @@ body {
 .bigbox {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 0;
+	flex-shrink: 0;
 	height: 342.5px;
 	width: 416px;
-	border: 1px solid green;
 }
-.wel0 {
+.wel {
+	display: flex;
+	flex-direction: column;
 	font-weight: 600;
 	color: white;
 	font-size: 24px;
@@ -32,16 +36,11 @@ body {
 	top: 0px;
 	width: 100%;
 	height: 30px;
-	border: 1px solid red;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
-.wel1 {
-	color: #b9bbbe;
-	font-size: 16px;
-	width: auto;
-	position: relative;
-	left: 0px;
-	top: 0px;
-	border: 1px solid green;
+h3 {
+	margin: 0px;
 }
 .form {
 	display: flex;
@@ -58,6 +57,7 @@ body {
 .login-button {
 	display: flex;
 	flex-direction: column;
+	flex-shrink: 0;
 	background-color: #5865f2;
 	width: 100%;
 	padding-left: 16px;
@@ -84,7 +84,7 @@ body {
 	padding-top: 10px;
 	font-size: 16px;
 	line-height: 1;
-/*	border: 1px #00004d; */
+	border: 1px #00004d; 
 	justify-content: center;
 	margin-bottom: 20px;
 }
