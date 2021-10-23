@@ -1,4 +1,4 @@
-(function () {
-	document.addEventListener("DOMContentLoaded", function () {
-
-		form.
+function required() {
+	var x = document.createElement("INPUT");
+	x.setAttribute("type", "password"); 
+}

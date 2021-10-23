@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="icon" type="image/svg+xml" href="images/xmpp-logo.svg">
+		<script language="javascript" src="index.js"></script>
 	</head>
 	<body>
 		<div class="nav">
@@ -12,23 +13,43 @@
 			<hr class="break">
 			<h3 class="newgroup">+</h3>
 		</div>
-		<div class="rightbox">
-			<div class="content">
-				<div class="topbar">
-					<p>Test</p>
+		<div class="content">
+			<div class="topbar">
+				<h3>Buddies</h3>
+				<div class="verticaline"></div>
+				<div class="tab">
+					<button name="online" class="tabButtons" onclick="openTab(event, 'online')">Online</button>
+					<button name="all" class="tabButtons" onclick="openTab(event, 'all')">All</button>
+					<button name="pending" class="tabButtons" onclick="openTab(event, 'pending')">Pending</button>
+					<button name="blocked" class="tabButtons" onclick="openTab(event, 'blocked')">Blocked</button>
+					<button name="addbuddy" class="tabButtons" onclick="openTab(event, 'addbuddy')">Add Buddy</button>
 				</div>
 			</div>
-			<div class="buddies">
-				<div class="buddybox">
-					<div class="layout">
-						<div class="blabel">Buddies</div>
-					</div>
+				<div id="online" class="tabcontent">
+					<h3>Online</h3>
+				</div>
+				<div id="all" class="tabcontent">
+					<h3>All</h3>
+				</div>
+				<div id="pending" class="tabcontent">
+					<h3>Pending</h3>
+				</div>
+				<div id="blocked" class="tabcontent">
+					<h3>Blocked</h3>
+				</div>
+				<div id="addbuddy" class="tabcontent">
+					<h3>Add Buddy</h3>
+				</div>
+		</div>
+		<div class="buddiesspan">
+			<div class="buddybox">
+				<div class="layout">
+					<div class="blabel">Buddies</div>
+				</div>
 			</div>
 		</div>
-			<div class="dms">
-				<p>DIRECT MESSAGES</p>
-				<!-- <a class="newdm">+</a> --!>
-			</div>
+		<div class="dms">
+			<span>DIRECT MESSAGES</span>
 		</div>
 	</body>
 </html>

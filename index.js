@@ -1,13 +1,14 @@
 function openTab(evt, tabName) {
-	var i, tabcontent, tablinks;
+	var i, tabcontent, tabButtons;
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";
 	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	tabButtons = document.getElementsByClassName("tabButtons");
+	for (i = 0; i < tabButtons.length; i++) {
+		tabButtons[i].className = tabButtons[i].className.replace(" active", "");
 	}
-	document.getElementById(tabName).style.display = "block";
-	evt.currentTarget.className += " active";
+/*	document.getElementById(tabName).style.display = "flex";*/
+	document.getElementById(tabName).style = "display: flex; flex-direction: column; height: 100%;";
+	evt.currentTarget.className += "active";
 }

@@ -1,5 +1,6 @@
 html {
 	overflow-y: scroll;
+	overflow: hidden;
 }
 body {
 	overflow: hidden;
@@ -25,12 +26,12 @@ body {
 	height: 100%;
 	align-items: center;
 }
-.rightbox {
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	position: relative;
-	float: right;
+.break {
+	width: 48px;
+	height: 4px;
+	background-color: #2d2f32;
+	border: 1px #2d2f32;
+	border-radius: 5px;
 }
 .content {
 	display: flex;
@@ -38,31 +39,48 @@ body {
 	flex-grow: 1;
 	flex-shrink: 1;
 	height: 100%;
-	width: 100%;
-/*	float: right;*/
-	align-items: stretch;
-	position: fixed;
+	width: 1271;
+	float: right;
+	position: relative;
 	background-color: #36393f;
 	overflow: hidden;
 }
 .topbar {
 	display: flex;
 	flex-direction: row;
-	background: #000;
-	color: #fff;
+	background: #36393f;
+	color: #eee;
 	position: relative;
 	float: top;
 	height: 48px;
-	border-bottom: 1px #fff;
+	border-bottom: 3px solid #2f3136;
 	align-items: center;
 	font-size: 16px;
 	line-height: 20px;
 	z-index: 2;
 }
+.verticaline {
+	border-left: thick solid #2f3136;
+	border-radius: 5px;
+	height: 80%;
+	width: 4px;
+	background-color: transparent;
+}
+p {
+	padding-left: 8px;
+	padding-right: 8px;
+	user-select: none;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	font-weight: 600px;
+}
 .buddies {
 	display: flex;
 	float: center;
-	flex-direction: column;
+	flex-direcautotion: column;
 	flex-grow: 0;
 	flex-shrink: 0;
 	height: 100%;
@@ -74,10 +92,6 @@ body {
 	align-items: center;
 }
 img {
-	flex-shrink: 0;
-	flex-grow: 0;
-}
-p {
 	flex-shrink: 0;
 	flex-grow: 0;
 }
@@ -94,15 +108,12 @@ div {
 	background: #000;
 	padding: 8px;
 }
-.break {
-	width: 48px;
-	height: 4px;
-	background-color: #2d2f32;
-	border: 1px #2d2f32;
-	border-radius: 5px
-}
-.buddies {
+.buddiesspan {
+	display: flex;
+	flex-direction: column;
 	justify-items: center;
+	position: relative;
+	overflow: "hidden scroll";
 }
 .buddybox {
 	display: flex;
@@ -111,12 +122,33 @@ div {
 	flex-grow: 0;
 	height: 42px;
 	width: 224px;
+	position: relative;
+	float: top;
 	text-align: left;
 	background-color: #393c42;
 	border-radius: 5px;
 	margin-top: 8px;
 	margin-left: 8px;
 	padding-top: 1px;
+}
+.dms {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	flex-grow: 0;
+	color: #8e9297;
+	text-align: left;
+	text-align: left;
+	height: 18px;
+	width: 209.4px;
+	padding-top: 18px;
+	padding-bottom: 4px;
+	padding-left: 18px;
+	padding-right: 8px;
+	user-select: none;
+}
+.dms:hover {
+	color: #fff;
 }
 .layout {
 	padding-left: 8px;
@@ -135,16 +167,49 @@ div {
 	vertical-align: middle;
 	padding: 8px;
 }
-.dms {
-	color: #8e9297;
-	text-align: left;
-}
-.dms:hover {
-	color: #fff;
-}
 .blabel {
 	flex-shrink: 0;
 	flex-grow: 0;
 	height: 20px;
 	margin: 0px;
+	justify-items: center;
+	align-items: center;
+	user-select: none;
+}
+span {
+	width: 193.8px;
+	height: 18px;
+}
+h3 {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.tab {
+	overflow: hidden;
+	background-color: transparent;
+}
+.tab button {
+	background-color: #36393f;
+	color: #eee;
+	border-radius: 5px;
+	border: 2px #36393f;
+	height: 20px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.tab button:hover {
+	background-color: silver;
+	border: 2px solid silver;
+}
+.tab button.active {
+	background-color: green;
+}
+.tab button.active:hover {
+	background-color: green;
+	border: 2px solid green;
+}
+.tabcontent {
+	display: none;
+	overflow-y: scroll;
+	margin-left: px;
 }
