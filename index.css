@@ -19,21 +19,45 @@ body {
 	float: left;
 	width: 72px;
 	background-color: #202225;
-	position: left;
+	position: relative;
+	float: left;
 	overflow: "hidden scroll";
 	height: 100%;
 	align-items: center;
+}
+.rightbox {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+	float: right;
 }
 .content {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	flex-shrink: 0;
+	flex-shrink: 1;
 	height: 100%;
-	width: auto;
-	float: right;
+	width: 100%;
+/*	float: right;*/
+	align-items: stretch;
+	position: fixed;
 	background-color: #36393f;
-	overflow: disabled;
+	overflow: hidden;
+}
+.topbar {
+	display: flex;
+	flex-direction: row;
+	background: #000;
+	color: #fff;
+	position: relative;
+	float: top;
+	height: 48px;
+	border-bottom: 1px #fff;
+	align-items: center;
+	font-size: 16px;
+	line-height: 20px;
+	z-index: 2;
 }
 .buddies {
 	display: flex;
@@ -44,7 +68,8 @@ body {
 	height: 100%;
 	width: 240px;
 	background-color: #000000;
-	position: center;
+	position: relative;
+	float: center;
 	overflow: "hidden scroll";
 	align-items: center;
 }

@@ -1,17 +1,23 @@
 html {
 	background-color: #202225;
-	align-items: center;
 }
 body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 }
 .loginbox {
 	display: flex;
+	float: center;
 	flex-direction: column;
 	flex-grow: 0;
 	flex-shrink: 0;
 	height: 406.5px;
 	width: 480px;
-	position: static;
 	background-color: #36393f;
 	border-radius: 5px;
 	align-items: center;
@@ -93,16 +99,15 @@ p {
 	color: #b9bbbe;
 	background-color: #303339;
 	border: 2px #222428;
+/*	border: 2px #00aff4; */
 	border-radius: 5px;
 	height: 44px;
 	width: 100%;
 	padding-top: 10px;
 	font-size: 16px;
 	line-height: 1;
-	border: 1px #00004d; 
 	justify-content: center;
 	margin-bottom: 20px;
-	border: 2px #0000004d;
 }
 button:hover {
 	background-color: #4752c4;
@@ -113,9 +118,17 @@ button:active {
 	border: 2px #4752c4;
 }
 input.form-control:hover {
-	border: 2px #0000004d;
+	border: 5px #000;
 }
 input.form-control:active {
 	border: 2px #00aff4;
 }
-
+label {
+	color: #ed4245;
+	font-weight: 600;
+	padding-bottom: 8px;
+}
+i {
+	color: #ed4245;
+	font-weight: 500;
+}

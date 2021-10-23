@@ -123,3 +123,7 @@ input.form-control:hover {
 input.form-control:active {
 	border: 2px #00aff4;
 }
+label {
+	font-weight: 600;
+	padding-bottom: 8px;
+}
