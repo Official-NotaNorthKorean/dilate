@@ -58,6 +58,7 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	z-index: 2;
+	user-select: none;
 }
 .verticaline {
 	border-left: thick solid #2f3136;
@@ -65,6 +66,8 @@ body {
 	height: 80%;
 	width: 4px;
 	background-color: transparent;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 p {
 	padding-left: 8px;
@@ -111,6 +114,7 @@ div {
 .buddiesspan {
 	display: flex;
 	flex-direction: column;
+	margin-top: 8px;
 	justify-items: center;
 	position: relative;
 	overflow: "hidden scroll";
@@ -171,7 +175,7 @@ div {
 	flex-shrink: 0;
 	flex-grow: 0;
 	height: 20px;
-	margin: 0px;
+	margin-top: 11px;
 	justify-items: center;
 	align-items: center;
 	user-select: none;
@@ -185,31 +189,63 @@ h3 {
 	margin-right: 8px;
 }
 .tab {
+	display: flex;
+	flex-direction: row;
 	overflow: hidden;
 	background-color: transparent;
+	user-select: none;
+	justify-items: center;
+	justify-content: center;
 }
 .tab button {
-	background-color: #36393f;
-	color: #eee;
-	border-radius: 5px;
-	border: 2px #36393f;
-	height: 20px;
-	font-weight: 600;
+	height: 24px;
+	font-weight: 500;
 	cursor: pointer;
-}
-.tab button:hover {
-	background-color: silver;
-	border: 2px solid silver;
-}
-.tab button.active {
-	background-color: green;
-}
-.tab button.active:hover {
-	background-color: green;
-	border: 2px solid green;
 }
 .tabcontent {
 	display: none;
 	overflow-y: scroll;
-	margin-left: px;
+	margin-left: 30px;
+	margin: right: 20px;
+	margin-top: 16px;
+	margin-bottom: 8px;
+	font-weight: 600px;
+	font-size: 12px;
+	overflow: "hidden scroll";
 }
+.contentBreak {
+	width: 100%;
+	margin-right: 20px;
+}
+.nonstd {
+/*	display: flex;
+	flex-direction: row; */
+	float: right;
+}
+.nonstd button {
+	height: 24px;
+	background-color: #3ba55d;
+	border: 2px solid #3ba55d;
+	border-radius: 5px;
+	color: #eee;
+	font-weight: 600px;
+	margin-right: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.std button {
+	height: 24px;
+	background-color: transparent;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	color: #eee;
+	font-weight: 600;
+	margin-right: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.std button:hover {
+	background-color: #2f3136;
+}
+.std button:active {
+	background-color: #3e4248;

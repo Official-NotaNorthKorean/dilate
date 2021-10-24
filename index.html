@@ -18,27 +18,38 @@
 				<h3>Buddies</h3>
 				<div class="verticaline"></div>
 				<div class="tab">
-					<button name="online" class="tabButtons" onclick="openTab(event, 'online')">Online</button>
-					<button name="all" class="tabButtons" onclick="openTab(event, 'all')">All</button>
-					<button name="pending" class="tabButtons" onclick="openTab(event, 'pending')">Pending</button>
-					<button name="blocked" class="tabButtons" onclick="openTab(event, 'blocked')">Blocked</button>
-					<button name="addbuddy" class="tabButtons" onclick="openTab(event, 'addbuddy')">Add Buddy</button>
+					<div class="std">
+						<div class="defaultTopButton">
+							<button class="tabButtons" onclick="openTab(event, 'online')">Online</button>
+						</div>
+						<button class="tabButtons" onclick="openTab(event, 'all')">All</button>
+						<button class="tabButtons" onclick="openTab(event, 'pending')">Pending</button>
+						<button class="tabButtons" onclick="openTab(event, 'blocked')">Blocked</button>
+					</div>
+					<div class="nonstd">
+						<button class="tabButtons" onclick="openTab(event, 'addbuddy')">Add Buddy</button>
+					</div>
 				</div>
 			</div>
 				<div id="online" class="tabcontent">
-					<h3>Online</h3>
+					<h3>ONLINE  −  </h3>
+					<hr class="contentBreak">
 				</div>
 				<div id="all" class="tabcontent">
-					<h3>All</h3>
+					<h3>ALL  −  </h3>
+					<hr class="contentBreak">
 				</div>
 				<div id="pending" class="tabcontent">
-					<h3>Pending</h3>
+					<h3>PENDING  −  </h3>
+					<hr class="contentBreak">
 				</div>
 				<div id="blocked" class="tabcontent">
-					<h3>Blocked</h3>
+					<h3>BLOCKED  −  </h3>
+					<hr class="contentBreak">
 				</div>
 				<div id="addbuddy" class="tabcontent">
-					<h3>Add Buddy</h3>
+					<h3>ADD BUDDY</h3>
+					<hr class="contentBreak">
 				</div>
 		</div>
 		<div class="buddiesspan">

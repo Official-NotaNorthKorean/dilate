@@ -12,7 +12,8 @@ body {
 }
 .loginbox {
 	display: flex;
-	float: center;
+/*	float: center;*/
+	float: none;
 	flex-direction: column;
 	flex-grow: 0;
 	flex-shrink: 0;
