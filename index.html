@@ -9,9 +9,9 @@
 	</head>
 	<body>
 		<div class="nav">
-			<img class="main" src="images/xmpp-logo.svg">
+			<button class="sideButtons"></button>
 			<hr class="break">
-			<h3 class="newgroup">+</h3>
+			<button class="newmuc">+</button>
 		</div>
 		<div class="content">
 			<div class="topbar">
@@ -22,32 +22,46 @@
 					<button class="tabButtons" onclick="openTab(event, 'all')" style="background-color: transparent; border: 2px solid transparent;">All</button>
 					<button class="tabButtons" onclick="openTab(event, 'pending')" style="background-color: transparent; border: 2px solid transparent;">Pending</button>
 					<button class="tabButtons" onclick="openTab(event, 'blocked')" style="background-color: transparent; border: 2px solid transparent;">Blocked</button>
-					<button class="tabButtons" onclick="openTab(event, 'addbuddy')"style="background-color: #3ba55d; border: 2px solid #3ba55d; ">Add Buddy</button>
+					<button class="tabButtons" onclick="openTab(event, 'addbuddy')"style="background-color: #3ba55d; border: 2px solid #3ba55d;">Add Buddy</button>
 				</div>
 			</div>
 				<div id="online" class="tabcontent">
-					<h3>ONLINE  −  </h3>
+					<header class="tabhead">
+						<h3>ONLINE  −  </h3>
+					</header>
+					<hr class="contentDivider">
 				</div>
 				<div id="all" class="tabcontent">
-					<h3>ALL  −  </h3>
+					<header class="tabhead">
+						<h3>ALL  −  </h3>
+					</header>
+					<hr class="contentDivider">
 				</div>
 				<div id="pending" class="tabcontent">
-					<h3>PENDING  −  </h3>
+					<header class="tabhead">
+						<h3>PENDING  −  </h3>
+					</header>
+					<hr class="contentDivider">
 				</div>
 				<div id="blocked" class="tabcontent">
-					<h3>BLOCKED  −  </h3>
+					<header class="tabhead">
+						<h3>BLOCKED</h3>
+						<p class="tabheading">You haven't blocked anyone</p>
+					</header>
+					<hr class="contentDivider">
 				</div>
 				<div id="addbuddy" class="tabcontent">
-					<header class="formbox">
+					<header class="tabhead">
 						<h2 class="addBuddyTitle">ADD BUDDY</h2>
 						<form class="newbuddy">
 							<p class="addBuddyLabel">XMPP ADDRESS</p>
-							<div class="buddywrapper">
-								<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off">
+							<div class="tabheading">
+								<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off" onclick="formOutline(event, '');">
 								<button class="addbuddyButton" type="button">Add buddy</button>
 							</div>
 						</form>
 					</header>
+					<hr class="contentDivider">
 				</div>
 		</div>
 		<div class="buddiesspan">
@@ -58,7 +72,7 @@
 			</div>
 		</div>
 		<div class="dms">
-			<span>DIRECT MESSAGES</span>
+			<span class="dm">DIRECT MESSAGES</span>
 		</div>
 	</body>
 </html>

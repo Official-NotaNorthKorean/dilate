@@ -39,7 +39,7 @@ body {
 	flex-grow: 1;
 	flex-shrink: 1;
 	height: 100%;
-	width: 1271;
+	width: 75%;
 	float: right;
 	position: relative;
 	background-color: #36393f;
@@ -102,14 +102,40 @@ div {
 	flex-shrink: 0;
 	flex-grow: 0;
 }
-.main {
+.sideButtons {
+/*	background-color: #36393f;*/
+	background-color: red;
+	color: #36393f;
+	background: url(images/xmpp-green.svg);
+	background-size: 90%;
+	background-position: center;
+	height: 56px;
+	width: 56px;
+	margin: 8px;
+	border: 0px;
 	border-radius: 50%;
-	height: 48px;
-	width: 48px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	background: #000;
-	padding: 8px;
+	
+}
+.sideButtons:hover {
+	background-color: #3ba55d;
+	background: url(images/xmpp.svg);
+	background-size: 90%;
+	background-position: center;
+	border-radius: 5px;
+}
+.newmuc {
+	background-color: #36393f;
+	color: #3ba55d;
+	border: 0px;
+	border-radius: 50%;
+	height: 56px;
+	width: 56px;
+	font-size: 24px;
+}
+.newmuc:hover {
+	background-color: #3ba55d;
+	border-radius: 5px;
+	color: #36393f;
 }
 .buddiesspan {
 	display: flex;
@@ -132,8 +158,11 @@ div {
 	background-color: #393c42;
 	border-radius: 5px;
 	margin-top: 8px;
-	margin-left: 8px;
+	margin-left: 16px;
 	padding-top: 1px;
+}
+.dm {
+	padding-left: 8px;
 }
 .dms {
 	display: flex;
@@ -159,17 +188,6 @@ div {
 	padding-right: 8px;
 	height: 42px;
 	width: 208px;
-}
-.newgroup {
-	height: 48px;
-	width: 48px;
-	background-color: #36393f;
-	color: #3ba55d;
-	border-radius: 50%;
-	font-size: 24px;
-	text-align: center;
-	vertical-align: middle;
-	padding: 8px;
 }
 .blabel {
 	flex-shrink: 0;
@@ -218,21 +236,7 @@ h3 {
 	margin-right: 20px;
 	float: left;
 }
-.nonstd button {
-	font-weight: 600px;
-}
-.nonstd button:active {
-	background-color: transparent;
-	color: #3ba55d;
-	border: transparent;
-}
-.std button:hover {
-	background-color: #2f3136;
-}
-.std button:active {
-	background-color: #3e4248;
-}
-.formbox {
+.tabhead {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 30px;
@@ -252,7 +256,7 @@ h3 {
 	margin-bottom: 8px;
 	margin-top: 0px
 }
-.addBuddyLabel {
+.tabheading {
 	font-size: 14px;
 	font-weight: 400px;
 	line-height: 20px;
@@ -268,7 +272,7 @@ h3 {
 	padding-left: 16px;
 	padding-right: 16px;
 	background-color: #303339;
-	border: 2px #202225;
+	border: 1px solid #202225;
 }
 .form-control {
 	float: none;
@@ -282,6 +286,9 @@ h3 {
 }
 .form-control:active {
 	border:transparent;
+}
+input:focus {
+	outline: 0px;
 }
 .addbuddyButton {
 	float: none;
@@ -300,4 +307,8 @@ h3 {
 .addbuddyButton:hover {
 	background-color: #4752c4;
 	border: transparent;
+}
+.contentDivider {
+	width: 100%;
+	color: #2f3136;
 }
