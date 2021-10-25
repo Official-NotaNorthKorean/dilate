@@ -204,23 +204,13 @@ h3 {
 }
 .tabcontent {
 	display: none;
-	overflow-y: scroll;
-	margin-left: 30px;
-	margin: right: 20px;
-	margin-top: 16px;
-	margin-bottom: 8px;
-	font-weight: 600px;
-	font-size: 12px;
 	overflow: "hidden scroll";
+	border-bottom: 1px solid #72767d;
 }
 .contentBreak {
 	width: 100%;
 	margin-right: 20px;
-}
-.nonstd {
-/*	display: flex;
-	flex-direction: row; */
-	float: right;
+	float: left;
 }
 .nonstd button {
 	height: 24px;
@@ -232,6 +222,11 @@ h3 {
 	margin-right: 8px;
 	padding-left: 8px;
 	padding-right: 8px;
+}
+.nonstd button:active {
+	background-color: transparent;
+	color: #3ba55d;
+	border: transparent;
 }
 .std button {
 	height: 24px;
@@ -249,3 +244,73 @@ h3 {
 }
 .std button:active {
 	background-color: #3e4248;
+}
+.formbox {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.newbuddy {
+	height: 92px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.addBuddyTitle {
+	font-size: 16px;
+	font-weight: 600px;
+	line-height: 16px;
+	color: #eee;
+	margin-bottom: 8px;
+	margin-top: 0px
+}
+.addBuddyLabel {
+	font-size: 14px;
+	font-weight: 400px;
+	line-height: 20px;
+	color: #afafaf;
+	position: static;
+}
+.buddywrapper {
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	height: 54px;
+	margin-top: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #303339;
+	border: 2px #202225;
+}
+.form-control {
+	float: none;
+	height: 22px;
+	width: 80%;
+	color: #eee;
+	background-color: #303339;
+	border: transparent;
+	font-size: 16px;
+	margin-right: 16px;
+}
+.form-control:active {
+	border:transparent;
+}
+.addbuddyButton {
+	float: none;
+	height: 28px;
+	width: 20%;
+	color: white;
+	background-color: #5865f2; /* Colour for when form not filled: #444c95; */
+	position: static;
+	border: transparent;
+	border-radius: 5px;
+}
+.addbuddyButton:active {
+	background-color: #3c45a5;
+	border: transparent;
+}
+.addbuddyButton:hover {
+	background-color: #4752c4;
+	border: transparent;
+}
