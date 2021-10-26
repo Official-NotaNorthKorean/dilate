@@ -13,6 +13,19 @@
 			<hr class="break">
 			<button class="newmuc">+</button>
 		</div>
+		<div class="buddybar">
+			<div class="buddybox">
+				<div class="layout">
+					<div class="blabel">Buddies</div>
+				</div>
+			</div>
+			<div class="dms">
+				<span class="dm">DIRECT MESSAGES</span>
+			</div>
+		</div>
+		<div class="accountBox">
+			<h3>ACCOUNT</h3>
+		</div>
 		<div class="content">
 			<div class="topbar">
 				<h3>Buddies</h3>
@@ -24,20 +37,24 @@
 					<button class="tabButtons" onclick="openTab(event, 'blocked')" style="background-color: transparent; border: 2px solid transparent;">Blocked</button>
 					<button class="tabButtons" onclick="openTab(event, 'addbuddy')"style="background-color: #3ba55d; border: 2px solid #3ba55d;">Add Buddy</button>
 				</div>
+				<button class="help">?</button>
 			</div>
 				<div id="online" class="tabcontent">
 					<header class="tabhead">
 						<h3>ONLINE  −  </h3>
+						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
 				<div id="all" class="tabcontent">
 					<header class="tabhead">
 						<h3>ALL  −  </h3>
+						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
 				<div id="pending" class="tabcontent">
 					<header class="tabhead">
 						<h3>PENDING  −  </h3>
+						<p class="tabheading">You do not have any pending buddy requests</p>
 					</header>
 				</div>
 				<div id="blocked" class="tabcontent">
@@ -49,21 +66,15 @@
 				<div id="addbuddy" class="tabcontent">
 					<header class="tabhead">
 						<h3>ADD BUDDY</h3>
-						<p class="tabheading">XMPP ADDRESS</p>
-						<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off" onclick="formOutline(event, '');">
-						<button class="addbuddyButton" type="button">Add buddy</button>
+						<form class="newbuddy">
+							<p class="tabheading">XMPP ADDRESS</p>
+							<div class="inputWrapper">
+								<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off" onclick="formOutline(event, '');">
+								<button class="addbuddyButton" type="button">Add buddy</button>
+							</div>
+						</form>
 					</header>
 				</div>
-		</div>
-		<div class="buddiesspan">
-			<div class="buddybox">
-				<div class="layout">
-					<div class="blabel">Buddies</div>
-				</div>
-			</div>
-		</div>
-		<div class="dms">
-			<span class="dm">DIRECT MESSAGES</span>
 		</div>
 	</body>
 </html>
