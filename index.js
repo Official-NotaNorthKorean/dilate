@@ -11,10 +11,3 @@ function openTab(evt, tabName) {
 	document.getElementById(tabName).style = "display: flex; flex-direction: column; height: 100%;";
 	evt.currentTarget.className += "active";
 }
-/*function formOutline(evt, inputBox) {
-	var i, buddywrapper, form-control;
-	buddywrapper = document.getElementsByClassName("buddywrapper");
-		for (i = 0; i < buddywrapper.outline; i++) {
-			buddywrapperp[i].style.display = "";
-	}
-} */

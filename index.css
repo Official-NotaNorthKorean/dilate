@@ -12,6 +12,36 @@ body {
 	border:0;
 	background-color: #2f3136;
 }
+button {
+	cursor: pointer;
+}
+img {
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+div {
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+p {
+	padding-left: 8px;
+	padding-right: 8px;
+	user-select: none;
+	margin: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	font-weight: 600px;
+}
+span {
+	width: 193.8px;
+	height: 18px;
+}
+h3 {
+	margin-left: 8px;
+	margin-right: 8px;
+}
 .nav {
 	display: flex;
 	flex-direction: column;
@@ -25,6 +55,38 @@ body {
 	overflow: "hidden scroll";
 	height: 100%;
 	align-items: center;
+}
+.homemenu {
+	background: url(images/xmpp-green.svg);
+	background-size: 90%;
+	background-position: center;
+	height: 56px;
+	width: 56px;
+	margin: 8px;
+	border: 0px;
+	border-radius: 50%;
+	
+}
+.homemenu:hover {
+	background-color: #3ba55d;
+	background: url(images/xmpp.svg);
+	background-size: 90%;
+	background-position: center;
+	border-radius: 5px;
+}
+.newmuc {
+	background-color: #36393f;
+	color: #3ba55d;
+	border: 0px;
+	border-radius: 50%;
+	height: 56px;
+	width: 56px;
+	font-size: 24px;
+}
+.newmuc:hover {
+	background-color: #3ba55d;
+	border-radius: 5px;
+	color: #36393f;
 }
 .break {
 	width: 48px;
@@ -69,21 +131,10 @@ body {
 	margin-left: 8px;
 	margin-right: 8px;
 }
-p {
-	padding-left: 8px;
-	padding-right: 8px;
-	user-select: none;
-	margin: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	flex-shrink: 0;
-	flex-grow: 0;
-	font-weight: 600px;
-}
 .buddies {
 	display: flex;
 	float: center;
-	flex-direcautotion: column;
+	flex-direction: column;
 	flex-grow: 0;
 	flex-shrink: 0;
 	height: 100%;
@@ -93,46 +144,6 @@ p {
 	float: center;
 	overflow: "hidden scroll";
 	align-items: center;
-}
-img {
-	flex-shrink: 0;
-	flex-grow: 0;
-}
-div {
-	flex-shrink: 0;
-	flex-grow: 0;
-}
-.homemenu {
-	background: url(images/xmpp-green.svg);
-	background-size: 90%;
-	background-position: center;
-	height: 56px;
-	width: 56px;
-	margin: 8px;
-	border: 0px;
-	border-radius: 50%;
-	
-}
-.homemenu:hover {
-	background-color: #3ba55d;
-	background: url(images/xmpp.svg);
-	background-size: 90%;
-	background-position: center;
-	border-radius: 5px;
-}
-.newmuc {
-	background-color: #36393f;
-	color: #3ba55d;
-	border: 0px;
-	border-radius: 50%;
-	height: 56px;
-	width: 56px;
-	font-size: 24px;
-}
-.newmuc:hover {
-	background-color: #3ba55d;
-	border-radius: 5px;
-	color: #36393f;
 }
 .buddiesspan {
 	display: flex;
@@ -195,14 +206,6 @@ div {
 	align-items: center;
 	user-select: none;
 }
-span {
-	width: 193.8px;
-	height: 18px;
-}
-h3 {
-	margin-left: 8px;
-	margin-right: 8px;
-}
 .tab {
 	display: flex;
 	flex-direction: row;
@@ -215,7 +218,6 @@ h3 {
 .tab button {
 	height: 24px;
 	font-weight: 500;
-	cursor: pointer;
 	padding-left: 8px;
 	padding-right: 8px;
 	margin-left: 8px;
@@ -228,17 +230,18 @@ h3 {
 	overflow: "hidden scroll";
 	border-bottom: 1px solid #72767d;
 }
-.contentBreak {
-	width: 100%;
-	margin-right: 20px;
-	float: left;
-}
 .tabhead {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
 	border-bottom: 2px solid #2f3136;
+}
+.formbox {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .newbuddy {
 	height: 92px;
@@ -253,6 +256,13 @@ h3 {
 	color: #eee;
 	margin-bottom: 8px;
 	margin-top: 0px
+}
+.addBuddyLabel {
+	font-size: 14px;
+	font-weight: 400px;
+	line-height: 20px;
+	color: white;
+	position: static;
 }
 .tabheading {
 	font-size: 14px;
