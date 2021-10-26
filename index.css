@@ -98,12 +98,14 @@ h3 {
 .content {
 	display: flex;
 	flex-direction: column;
+	flex: 1;
 	flex-grow: 1;
 	flex-shrink: 1;
+	left: 328px;
 	height: 100%;
-	width: 75%;
-	float: right;
-	position: relative;
+	width: 100%;
+	float: none;
+	position: fixed;
 	background-color: #36393f;
 	overflow: hidden;
 }
@@ -167,6 +169,7 @@ h3 {
 	border-radius: 5px;
 	margin-top: 8px;
 	margin-left: 16px;
+	margin-right: 16px;
 	padding-top: 1px;
 }
 .dm {
@@ -308,11 +311,11 @@ input:focus {
 	border: transparent;
 	border-radius: 5px;
 }
-.addbuddyButton:active {
-	background-color: #3c45a5;
-	border: transparent;
-}
 .addbuddyButton:hover {
 	background-color: #4752c4;
+	border: transparent;
+}
+.addbuddyButton:active {
+	background-color: #3c45a5;
 	border: transparent;
 }
