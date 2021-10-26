@@ -102,10 +102,7 @@ div {
 	flex-shrink: 0;
 	flex-grow: 0;
 }
-.sideButtons {
-/*	background-color: #36393f;*/
-	background-color: red;
-	color: #36393f;
+.homemenu {
 	background: url(images/xmpp-green.svg);
 	background-size: 90%;
 	background-position: center;
@@ -116,7 +113,7 @@ div {
 	border-radius: 50%;
 	
 }
-.sideButtons:hover {
+.homemenu:hover {
 	background-color: #3ba55d;
 	background: url(images/xmpp.svg);
 	background-size: 90%;
@@ -241,6 +238,7 @@ h3 {
 	padding-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
+	border-bottom: 2px solid #2f3136;
 }
 .newbuddy {
 	height: 92px;
@@ -307,8 +305,4 @@ input:focus {
 .addbuddyButton:hover {
 	background-color: #4752c4;
 	border: transparent;
-}
-.contentDivider {
-	width: 100%;
-	color: #2f3136;
 }
