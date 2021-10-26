@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="nav">
-			<button class="homemenu"></button>
+			<button class="homemenu" onclick="openNavTab(event, 'homemenu');"></button>
 			<hr class="break">
 			<button class="newmuc">+</button>
 		</div>
@@ -20,46 +20,48 @@
 				</div>
 			</div>
 			<div class="dms">
-				<span class="dm">DIRECT MESSAGES</span>
+				<p class="dm">DIRECT MESSAGES</p>
+				<button class="newDM">+</button>
 			</div>
 		</div>
 		<div class="accountBox">
-			<h3>ACCOUNT</h3>
+		<!--	<h3>ACCOUNT</h3> --!>
+			<button class="avatar" onclick="();"></button>
 		</div>
 		<div class="content">
 			<div class="topbar">
-				<h3>Buddies</h3>
+				<h3>Contacts</h3>
 				<div class="verticaline"></div>
 				<div class="tab">
-					<button class="tabButtons" onclick="openTab(event, 'online')" style="background-color: transparent; border: 2px solid transparent;">Online</button>
-					<button class="tabButtons" onclick="openTab(event, 'all')" style="background-color: transparent; border: 2px solid transparent;">All</button>
-					<button class="tabButtons" onclick="openTab(event, 'pending')" style="background-color: transparent; border: 2px solid transparent;">Pending</button>
-					<button class="tabButtons" onclick="openTab(event, 'blocked')" style="background-color: transparent; border: 2px solid transparent;">Blocked</button>
-					<button class="tabButtons" onclick="openTab(event, 'addbuddy')"style="background-color: #3ba55d; border: 2px solid #3ba55d;">Add Buddy</button>
+					<button class="tabButtons" onclick="openTab(event, 'online')">Online</button>
+					<button class="tabButtons" onclick="openTab(event, 'all')">All</button>
+					<button class="tabButtons" onclick="openTab(event, 'pending')">Pending</button>
+					<button class="tabButtons" onclick="openTab(event, 'blocked')">Blocked</button>
+					<button class="buddybutton" onclick="openTab(event, 'addbuddy')">Add buddy</button>
 				</div>
 				<button class="help">?</button>
 			</div>
 				<div id="online" class="tabcontent">
 					<header class="tabhead">
-						<h3>ONLINE  −  </h3>
+						<h3>ONLINE  −  0</h3>
 						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
 				<div id="all" class="tabcontent">
 					<header class="tabhead">
-						<h3>ALL  −  </h3>
+						<h3>ALL  −  0</h3>
 						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
 				<div id="pending" class="tabcontent">
 					<header class="tabhead">
-						<h3>PENDING  −  </h3>
+						<h3>PENDING  −  0</h3>
 						<p class="tabheading">You do not have any pending buddy requests</p>
 					</header>
 				</div>
 				<div id="blocked" class="tabcontent">
 					<header class="tabhead">
-						<h3>BLOCKED</h3>
+						<h3>BLOCKED  −  0</h3>
 						<p class="tabheading">You haven't blocked anyone</p>
 					</header>
 				</div>
@@ -70,7 +72,7 @@
 							<p class="tabheading">XMPP ADDRESS</p>
 							<div class="inputWrapper">
 								<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off" onclick="formOutline(event, '');">
-								<button class="addbuddyButton" type="button">Add buddy</button>
+								<button class="addbuddyButton" type="button" role="button" aria-pressed="false">Add buddy</button>
 							</div>
 						</form>
 					</header>
