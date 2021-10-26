@@ -125,11 +125,9 @@ h3 {
 	user-select: none;
 }
 .verticaline {
-	border-left: thick solid #2f3136;
-	border-radius: 5px;
+	background-color: #2f3136;
 	height: 80%;
-	width: 4px;
-	background-color: transparent;
+	width: 2px;
 	margin-left: 8px;
 	margin-right: 8px;
 }
@@ -151,6 +149,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	margin-top: 8px;
+	width: 0px;
 	justify-items: center;
 	position: relative;
 	overflow: "hidden scroll";
@@ -215,8 +214,6 @@ h3 {
 	overflow: hidden;
 	background-color: transparent;
 	user-select: none;
-	justify-items: center;
-	justify-content: center;
 }
 .tab button {
 	height: 24px;
@@ -227,6 +224,7 @@ h3 {
 	border-radius: 5px;
 	color: #eee;
 	font-weight: 500;
+	cursor: pointer;
 }
 .tabcontent {
 	display: none;
@@ -241,31 +239,19 @@ h3 {
 	border-bottom: 2px solid #2f3136;
 }
 .formbox {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
+	background-color: red;
+	width: 100%;
 }
 .newbuddy {
 	height: 92px;
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
-}
-.addBuddyTitle {
-	font-size: 16px;
-	font-weight: 600px;
-	line-height: 16px;
-	color: #eee;
-	margin-bottom: 8px;
-	margin-top: 0px
-}
-.addBuddyLabel {
-	font-size: 14px;
-	font-weight: 400px;
-	line-height: 20px;
-	color: white;
-	position: static;
 }
 .tabheading {
 	font-size: 14px;
@@ -277,26 +263,29 @@ h3 {
 .buddywrapper {
 	display: flex;
 	align-items: center;
-	border-radius: 5px;
 	height: 54px;
 	margin-top: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
 	background-color: #303339;
 	border: 1px solid #202225;
+	border-radius: 5px;
 }
 .form-control {
 	float: none;
-	height: 22px;
+	height: 54px;
 	width: 80%;
+	line-height: 22px;
 	color: #eee;
+	padding: 16px;
 	background-color: #303339;
-	border: transparent;
+	border: 1px solid #202225;
+	border-radius: 5px;
 	font-size: 16px;
 	margin-right: 16px;
 }
-.form-control:active {
-	border:transparent;
+.form-control:focus {
+	border: 1px solid #00b7ff;
 }
 input:focus {
 	outline: 0px;

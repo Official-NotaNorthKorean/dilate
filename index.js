@@ -8,6 +8,6 @@ function openTab(evt, tabName) {
 		for (i = 0; i < tabButtons.length; i++) {
 			tabButtons[i].className = tabButtons[i].className.replace("active", "");
 	}
-	document.getElementById(tabName).style = "display: flex; flex-direction: column; height: 100%;";
+	document.getElementById(tabName).style = "display: flex; flex-direction: column; height: 100%; align-items: left; width: 100%;";
 	evt.currentTarget.className += "active";
 }
