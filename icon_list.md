@@ -8,3 +8,4 @@ ICON LIST
 -	Upload file
 -	Audio call
 -	Video call
+-	Generic user icon

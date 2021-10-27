@@ -55,11 +55,13 @@ h3 {
 	overflow: "hidden scroll";
 	align-items: center;
 }
-.homemenu {
+.homebutton {
 	background: url(images/xmpp-green.svg);
-	background-size: contain; 
+	background-size: contain;
 	background-position: center;
 	background-color: #36393f;
+	height: 56px;
+	width: 56px;
 	padding: auto;
 	height: 56px;
 	width: 56px;
@@ -67,7 +69,7 @@ h3 {
 	border: none;
 	border-radius: 50%;
 }
-.homemenu:hover {
+.homebutton:hover {
 	background: url(images/xmpp.svg);
 	background-size: contain;
 	background-position: center;
@@ -116,24 +118,16 @@ h3 {
 	float: top;
 	text-align: left;
 	background-color: #393c42;
+	color: #eee;
 	border-radius: 5px;
+	border: none;
 	margin: 16px;
-	padding-top: 1px;
-}
-.layout {
 	padding-left: 8px;
 	padding-right: 8px;
-	height: 42px;
-	width: 208px;
-}
-.blabel {
-	flex-shrink: 0;
-	flex-grow: 0;
-	height: 20px;
-	margin-top: 11px;
-	justify-items: center;
-	align-items: center;
+	line-height: 20px;
 	user-select: none;
+	justify-content: center;
+	justify-items: center;
 }
 .dms {
 	display: flex;
@@ -174,6 +168,8 @@ h3 {
 }
 .accountBox {
 	display: flex;
+	flex-grow: 0;
+	flex-shrink: 0;
 	float: none;
 	position: absolute;
 	flex-direction: column;
@@ -183,7 +179,7 @@ h3 {
 	width: 256px;
 	left: 72px;
 	bottom: 0px;
-	padding-left: 16px;
+	padding: 0px;
 }
 .avatar {
 	align-items: center;

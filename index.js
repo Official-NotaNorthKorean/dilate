@@ -17,7 +17,7 @@ function openNavTab(evt, tabName) {
 		for (i = 0; i < navTabContent.length; i++) {
 			navTabContent[i].style.display = "none";
 		}
-	navButtons = document.getElementsByClassName("homemenu", "newmuc");
+	navButtons = document.getElementsByClassName("gohome", "newmuc");
 		for (i = 0; i < navButtons.length; i++) {
 			navButtons[i].className = navButtons[i].className.replace("active");
 		}

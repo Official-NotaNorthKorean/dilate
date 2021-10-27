@@ -9,18 +9,24 @@
 	</head>
 	<body>
 		<div class="nav">
-			<button class="homebutton" type=""></button>
+			<button class="gohome" onclick="openNavTab(event, 'homemenu');"></button>
 			<hr class="break">
 			<button class="newmuc">+</button>
 		</div>
+		<div class="homemenu"> <!-- NEW GROUP --!>
 		<div class="buddybar">
-			<button class="buddybox">Buddies</button>
+			<div class="buddybox">
+				<div class="layout">
+					<div class="blabel">Buddies</div>
+				</div>
+			</div>
 			<div class="dms">
-				<span class="dm">DIRECT MESSAGES</span>
+				<p class="dm">DIRECT MESSAGES</p>
+				<button class="newDM">+</button>
 			</div>
 		</div>
 		<div class="accountBox">
-			<h3>ACCOUNT</h3>
+			<button class="avatar" onclick="openProfile(event, '');"></button>
 		</div>
 		<div class="content">
 			<div class="topbar">
@@ -37,25 +43,25 @@
 			</div>
 				<div id="online" class="tabcontent">
 					<header class="tabhead">
-						<h3>ONLINE  −  </h3>
+						<h3>ONLINE  −  0</h3>
 						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
 				<div id="all" class="tabcontent">
 					<header class="tabhead">
-						<h3>ALL  −  </h3>
+						<h3>ALL  −  0</h3>
 						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
 				<div id="pending" class="tabcontent">
 					<header class="tabhead">
-						<h3>PENDING  −  </h3>
+						<h3>PENDING  −  0</h3>
 						<p class="tabheading">You do not have any pending buddy requests</p>
 					</header>
 				</div>
 				<div id="blocked" class="tabcontent">
 					<header class="tabhead">
-						<h3>BLOCKED</h3>
+						<h3>BLOCKED  −  0</h3> <!-- use JS to show actual numbers of blocked users-->
 						<p class="tabheading">You haven't blocked anyone</p>
 					</header>
 				</div>
@@ -66,10 +72,11 @@
 							<p class="tabheading">XMPP ADDRESS</p>
 							<div class="inputWrapper">
 								<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off" onclick="formOutline(event, '');">
-								<button class="addbuddyButton" type="button">Add buddy</button>
+								<button class="addbuddyButton" type="button" role="button" aria-pressed="false">Add buddy</button>
 							</div>
 						</form>
 					</header>
+				</div>
 				</div>
 		</div>
 	</body>
