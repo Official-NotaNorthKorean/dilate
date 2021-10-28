@@ -4,6 +4,9 @@
 		<title>Dilate</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="primecontent.css">
+		<link rel="stylesheet" type="text/css" href="addmuc.css">
+		<link rel="stylesheet" type="text/css" href="muc.css">
 		<link rel="icon" type="image/svg+xml" href="images/xmpp-logo.svg">
 		<script language="javascript" src="index.js"></script>
 	</head>
@@ -13,16 +16,16 @@
 			<hr class="break">
 			<button id="nav1" class="newmuc" onclick="navShow(this);">+</button>
 		</div>
-		<div id="nav0" class="primeContent">
-		<div class="buddybar">
-			<button class="contactsTab">Contacts</button>
-			<div class="dms">
-				<span class="dm">DIRECT MESSAGES</span>
+		<div id="nav-0" class="navContent">
+			<div class="buddybar">
+				<button class="contactsTab">Contacts</button>
+				<div class="dms">
+					<span class="dm">DIRECT MESSAGES</span>
+				</div>
 			</div>
-		</div>
-		<div class="accountBox">
-			<h3>ACCOUNT</h3>
-		</div>
+			<div class="accountBox">
+				<h3>ACCOUNT</h3>
+			</div>
 			<div class="topbar">
 				<h3>Contacts</h3>
 				<div class="verticaline"></div>
@@ -35,42 +38,44 @@
 				</div>
 				<button class="help">?</button>
 			</div>
-				<div id="tabs-0" class="tabContent">
-					<header class="tabhead">
-						<h3>ONLINE  −  </h3>
-						<p class="tabheading">You do not have any contacts</p>
-					</header>
-				</div>
-				<div id="tabs-1" class="tabContent">
-					<header class="tabhead">
-						<h3>ALL  −  </h3>
-						<p class="tabheading">You do not have any contacts</p>
-					</header>
-				</div>
-				<div id="tabs-2" class="tabContent">
-					<header class="tabhead">
-						<h3>PENDING  −  </h3>
-						<p class="tabheading">You do not have any pending buddy requests</p>
-					</header>
-				</div>
-				<div id="tabs-3" class="tabContent">
-					<header class="tabhead">
-						<h3>BLOCKED</h3>
-						<p class="tabheading">You haven't blocked anyone</p>
-					</header>
-				</div>
-				<div id="tabs-4" class="tabContent">
-					<header class="tabhead">
-						<h3>ADD BUDDY</h3>
-						<form class="newbuddy">
-							<p class="tabheading">XMPP ADDRESS</p>
-							<div class="inputWrapper">
+			<div id="tabs-0" class="tabContent">
+				<header class="tabhead">
+					<h3 class="tabheading">ONLINE  −  0</h3>
+					<p class="tabheading">You do not have any contacts</p>
+				</header>
+			</div>
+			<div id="tabs-1" class="tabContent">
+				<header class="tabhead">
+					<h3 class="tabheading">ALL  −  0</h3>
+					<p class="tabheading">You do not have any contacts</p>
+				</header>
+			</div>
+			<div id="tabs-2" class="tabContent">
+				<header class="tabhead">
+					<h3 class="tabheading">PENDING  −  0</h3>
+					<p class="tabheading">You do not have any pending buddy requests</p>
+				</header>
+			</div>
+			<div id="tabs-3" class="tabContent">
+				<header class="tabhead">
+					<h3 class="tabheading">BLOCKED   −  0</h3>
+					<p class="tabsubtitle">You haven't blocked anyone</p>
+				</header>
+			</div>
+			<div id="tabs-4" class="tabContent">
+				<header class="tabhead">
+					<h3 class="tabheading">ADD BUDDY</h3>
+					<form class="newbuddy">
+						<p class="tabheading">XMPP ADDRESS</p>
+						<div class="inputWrapper">
 								<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off" onclick="formOutline(event, '');">
 								<button class="addbuddyButton" type="button">Add buddy</button>
-							</div>
-						</form>
-					</header>
-				</div>
+						</div>
+					</form>
+				</header>
+			</div>
+		</div>
+		<div id="nav-1" class="navContent">
 		</div>
 	</body>
 </html>
