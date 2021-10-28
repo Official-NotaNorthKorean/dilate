@@ -9,12 +9,13 @@
 	</head>
 	<body>
 		<div class="nav">
-			<button class="homebutton" type=""></button>
+			<button id="nav0" class="homebutton" onclick="navShow(this);"></button>
 			<hr class="break">
-			<button class="newmuc">+</button>
+			<button id="nav1" class="newmuc" onclick="navShow(this);">+</button>
 		</div>
+		<div id="nav0" class="primeContent">
 		<div class="buddybar">
-			<button class="buddybox">Buddies</button>
+			<button class="contactsTab">Contacts</button>
 			<div class="dms">
 				<span class="dm">DIRECT MESSAGES</span>
 			</div>
@@ -22,44 +23,43 @@
 		<div class="accountBox">
 			<h3>ACCOUNT</h3>
 		</div>
-		<div class="content">
 			<div class="topbar">
 				<h3>Contacts</h3>
 				<div class="verticaline"></div>
 				<div class="primeTopTab">
-					<button id="tabs1" class="primeTopButtons" onclick="showStuff(this)">Online</button>
-					<button id="tabs2" class="primeTopButtons" onclick="showStuff(this)">All</button>
-					<button id="tabs3" class="primeTopButtons" onclick="showStuff(this)">Pending</button>
-					<button id="tabs4" class="primeTopButtons" onclick="showStuff(this)">Blocked</button>
-					<button id="tabs5" class="primeTopBuddy"   onclick="showStuff(this)">Add buddy</button>
+					<button id="tabs0" class="primeTopButtons" onclick="primeTopShowTab(this)">Online</button>
+					<button id="tabs1" class="primeTopButtons" onclick="primeTopShowTab(this)">All</button>
+					<button id="tabs2" class="primeTopButtons" onclick="primeTopShowTab(this)">Pending</button>
+					<button id="tabs3" class="primeTopButtons" onclick="primeTopShowTab(this)">Blocked</button>
+					<button id="tabs4" class="primeTopBuddy"   onclick="primeTopShowTab(this)">Add buddy</button>
 				</div>
 				<button class="help">?</button>
 			</div>
-				<div id="tabs-1" class="tabContent">
+				<div id="tabs-0" class="tabContent">
 					<header class="tabhead">
 						<h3>ONLINE  −  </h3>
 						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
-				<div id="tabs-2" class="tabContent">
+				<div id="tabs-1" class="tabContent">
 					<header class="tabhead">
 						<h3>ALL  −  </h3>
 						<p class="tabheading">You do not have any contacts</p>
 					</header>
 				</div>
-				<div id="tabs-3" class="tabContent">
+				<div id="tabs-2" class="tabContent">
 					<header class="tabhead">
 						<h3>PENDING  −  </h3>
 						<p class="tabheading">You do not have any pending buddy requests</p>
 					</header>
 				</div>
-				<div id="tabs-4" class="tabContent">
+				<div id="tabs-3" class="tabContent">
 					<header class="tabhead">
 						<h3>BLOCKED</h3>
 						<p class="tabheading">You haven't blocked anyone</p>
 					</header>
 				</div>
-				<div id="tabs-5" class="tabContent">
+				<div id="tabs-4" class="tabContent">
 					<header class="tabhead">
 						<h3>ADD BUDDY</h3>
 						<form class="newbuddy">

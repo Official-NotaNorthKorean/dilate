@@ -1,9 +1,8 @@
 html {
 	overflow-y: scroll;
-	overflow: hidden;
+/*	overflow: hidden; */
 }
 body {
-	align-items: center;
 	color: #eee;
 	margin: 0;
 	padding:0;
@@ -41,22 +40,20 @@ h3 {
 	margin-right: 8px;
 }
 .nav {
-	display: flex;
+	display: block;
 	flex-direction: column;
 	justify-content: flex-start;
 	flex-grow: 1;
 	flex-shrink: 0;
-	float: left;
 	height: 100%;
 	width: 72px;
 	background-color: #202225;
-	position: absolute;
+	position: fixed;
 	float: left;
 	overflow: "hidden scroll";
-	align-items: center;
+	justify-items: center;
 }
-.homebutton {
-	background: url(images/xmpp-green.svg);
+.nav button {
 	background-size: contain;
 	background-position: center;
 	background-color: #36393f;
@@ -69,12 +66,20 @@ h3 {
 	border: none;
 	border-radius: 50%;
 }
-.homebutton:hover {
-	background: url(images/xmpp.svg);
+.nav button:hover {
 	background-size: contain;
 	background-position: center;
 	background-color: #3ba55d;
 	border-radius: 5px;
+}
+.nav button:focus {
+	border-radius: 5px;
+}
+.homebutton {
+	background: url(images/xmpp-green.svg);
+}
+.homebutton:hover {
+	background: url(images/xmpp.svg);
 }
 .newmuc {
 	background-color: #36393f;
@@ -87,7 +92,6 @@ h3 {
 }
 .newmuc:hover {
 	background-color: #3ba55d;
-	border-radius: 5px;
 	color: #36393f;
 }
 .break {
@@ -103,11 +107,21 @@ h3 {
 	width: 256px;
 	height: 100%;
 	left: 72px;
-	position: absolute;
+	position: fixed;
 	background-color: #2f3136;
 	justify-items: center;
 }
-.buddybox {
+.contactsTab:focus {
+	background-color: #393c42;
+	color: #eee;
+}
+.contactsTab:hover {
+	display: flex;
+/*	background-color: #393c42;*/
+	background-color: green;
+	color: #eee;
+}
+.contactsTab {
 	display: flex;
 	flex-direction: column;
 	flex-shrink: 0;
@@ -117,7 +131,7 @@ h3 {
 	position: relative;
 	float: top;
 	text-align: left;
-	background-color: #393c42;
+	background-color: /*#393c42*/ transparent;
 	color: #eee;
 	border-radius: 5px;
 	border: none;
@@ -171,7 +185,7 @@ h3 {
 	flex-grow: 0;
 	flex-shrink: 0;
 	float: none;
-	position: absolute;
+	position: fixed;
 	flex-direction: column;
 	justify-content: center;
 	background-color: #292b2f;
@@ -192,18 +206,18 @@ h3 {
 	width: 32px;
 
 }
-.content {
-	display: flex;
-	flex-direction: column;
+.primeContent {
+	display: block;
+/*	flex-direction: column;
 	flex: 1;
 	flex-grow: 1;
-	flex-shrink: 1;
-	left: 328px;
+	flex-shrink: 1; */
+	left: 100px;
 	top: 0px;
 	right: 0px;
 	height: 100%;
-	width: 100%;
-	position: absolute;
+/*	width: 100%; */
+	position: fixed;
 	background-color: #36393f;
 	overflow: hidden;
 }
@@ -212,10 +226,10 @@ h3 {
 	flex-direction: row;
 	background: #36393f;
 	color: #eee;
-	position: absolute;
+	position: fixed;
 	float: top;
 	height: 48px;
-	left: 0px;
+	left: 328px;
 	right: 0px;
 	border-bottom: 2px solid #2f3136;
 	align-items: center;
@@ -240,7 +254,7 @@ h3 {
 	height: 100%;
 	width: 240px;
 	background-color: #000000;
-	position: relative;
+	position: fixed;
 	float: center;
 	overflow: "hidden scroll";
 	align-items: center;
@@ -252,7 +266,7 @@ h3 {
 	background-color: transparent;
 	user-select: none;
 }
-.primeTopButtons {				 /* DO NOT CHANGE -- BEGIN */
+.primeTopButtons {
 	background-color: transparent;
 	border: 2px solid transparent;
 	color: #eee;
@@ -275,11 +289,16 @@ h3 {
 	border-radius: 5px;
 	font-weight: 500;
 }
-.primeTopButtons:active {
-	background-color: pink;
-}
-.primeTopButtons:visited {
-	background-color: purple;
+.primeTopButtons:focus {
+	background-color: #2f3136;
+	color: #eee;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: 8px;
+	height: 24px;
+	width: auto;
+	border-radius: 5px;
+	font-weight: 500;
 }
 .primeTopBuddy {
 	background-color: #3aa55c;
@@ -293,7 +312,7 @@ h3 {
 	border-radius: 5px;
 	font-weight: 500;
 }
-.buddybuttonactive {
+.primeTopBuddy:focus {
 	background-color: transparent;
 	border: 2px solid transparent;
 	color: #3aa55c;
@@ -304,6 +323,11 @@ h3 {
 	width: auto;
 	border-radius: 5px;
 	font-weight: 500;
+}
+.primeTopBuddy:hover {
+	background-color: transparent;
+	color: #3aa55c;
+	border: 2px solid transparent;
 }
 .buddybutton:hover {
 	background-color: transparent;
@@ -326,29 +350,23 @@ h3 {
 	background-color: #36393f;
 	color: #3aa55c;
 }
-/*.primeTabContent {
-	visibility: hidden;
-	position: absolute;
+.tabContent {
+	display: none;
+	position: fixed;
 	overflow: "hidden scroll";
 	justify-items: center;
 	margin-top: 48px;
 	padding-left: 30px;
 	padding-right: 30px;
-	left: 0px;
-	right: 328px;
-}
-.primeTabContent > .visible {
-	visibility: visible;
-}*/
-.tabcontent {
-	display: none;
-	margin-top: 48px;
+	left: 328px;
+	right: 0px;
 }
 .tabhead {
-	position: absolute;
+	position: relative;
 	left: 0px;
-	right: 328px;
+	right: 238px; 
 	height: auto;
+	width: 100%;
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-top: 20px;
