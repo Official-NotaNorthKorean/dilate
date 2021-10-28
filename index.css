@@ -245,14 +245,14 @@ h3 {
 	overflow: "hidden scroll";
 	align-items: center;
 }
-.tab {
+.primeTopTab {
 	display: flex;
 	flex-direction: row;
 	overflow: hidden;
 	background-color: transparent;
 	user-select: none;
 }
-.tabButtons {				 /* DO NOT CHANGE -- BEGIN */
+.primeTopButtons {				 /* DO NOT CHANGE -- BEGIN */
 	background-color: transparent;
 	border: 2px solid transparent;
 	color: #eee;
@@ -264,7 +264,7 @@ h3 {
 	border-radius: 5px;
 	font-weight: 500;
 }
-.tabButtons:hover {
+.primeTopButtons:hover {
 	background-color: #2f3136;
 	color: #eee;
 	padding-left: 8px;
@@ -275,13 +275,13 @@ h3 {
 	border-radius: 5px;
 	font-weight: 500;
 }
-.tabButtons:active {
+.primeTopButtons:active {
 	background-color: pink;
 }
-.tabButtons:visited {
+.primeTopButtons:visited {
 	background-color: purple;
 }
-.buddybutton {
+.primeTopBuddy {
 	background-color: #3aa55c;
 	border: 2px solid #3aa55c;
 	color: #eee;
@@ -293,10 +293,10 @@ h3 {
 	border-radius: 5px;
 	font-weight: 500;
 }
-.buddybutton:visited {
+.buddybuttonactive {
 	background-color: transparent;
-	border: 2px solid red;
-	color: #eee;
+	border: 2px solid transparent;
+	color: #3aa55c;
 	padding-left: 8px;
 	padding-right: 8px;
 	margin-left: 8px;
@@ -305,17 +305,7 @@ h3 {
 	border-radius: 5px;
 	font-weight: 500;
 }
-.buddybutton:focus {
-	background-color: transparent;
-	border: 2px solid green;
-	color: #3aa55c;
-}
 .buddybutton:hover {
-	background-color: transparent;
-	border: 2px solid transparent;
-	color: #3aa55c;
-}
-.buddybutton:active {
 	background-color: transparent;
 	border: 2px solid transparent;
 	color: #3aa55c;
@@ -335,9 +325,9 @@ h3 {
 .help:hover {
 	background-color: #36393f;
 	color: #3aa55c;
-}					 /* DO NOT CHANGE -- END */
-.tabcontent {
-	display: none;
+}
+/*.primeTabContent {
+	visibility: hidden;
 	position: absolute;
 	overflow: "hidden scroll";
 	justify-items: center;
@@ -347,10 +337,17 @@ h3 {
 	left: 0px;
 	right: 328px;
 }
+.primeTabContent > .visible {
+	visibility: visible;
+}*/
+.tabcontent {
+	display: none;
+	margin-top: 48px;
+}
 .tabhead {
 	position: absolute;
 	left: 0px;
-	right: 0px;
+	right: 328px;
 	height: auto;
 	margin-left: 30px;
 	margin-right: 30px;
