@@ -206,21 +206,6 @@ h3 {
 	width: 32px;
 
 }
-.primeContent {
-	display: block;
-/*	flex-direction: column;
-	flex: 1;
-	flex-grow: 1;
-	flex-shrink: 1; */
-	left: 100px;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-/*	width: 100%; */
-	position: fixed;
-	background-color: #36393f;
-	overflow: hidden;
-}
 .topbar {
 	display: flex;
 	flex-direction: row;

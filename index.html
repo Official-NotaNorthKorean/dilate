@@ -11,71 +11,31 @@
 		<script language="javascript" src="index.js"></script>
 	</head>
 	<body>
-		<div class="nav">
+		<nav class="masterNav">
 			<button id="nav0" class="homebutton" onclick="navShow(this);"></button>
 			<hr class="break">
 			<button id="nav1" class="newmuc" onclick="navShow(this);">+</button>
+		</nav>
+		<div id="nav-0" class="tabContent">
+			<nav class="homeNav">
+				<div class="homeButtonWrapper">
+					<button id="home0" class="homeNavTabs" onclick="homeShow(this);">Contacts</button>
+				</div>
+			</nav>
 		</div>
-		<div id="nav-0" class="navContent">
-			<div class="buddybar">
-				<button class="contactsTab">Contacts</button>
-				<div class="dms">
-					<span class="dm">DIRECT MESSAGES</span>
+		<div id="nav-1" class="tabContent">
+			<h1>ADD MUC</h1>
+		</div>
+
+		<div class="background">
+			<div class="errbox">
+				<div class="stylebox">
+					<h3>Error</h3>
+					<p>An error has occured...<br>If you believe this a bug, please file a bug report.</p>
+					<button class="reload" onclick="window.location.reload(false)">Reload</button>
+					<button class="bugreport" onclick="window.open('https://github.com/Official-NotaNorthKorean/dilate/issues/new/choose');">Report bug</button>
 				</div>
 			</div>
-			<div class="accountBox">
-				<h3>ACCOUNT</h3>
-			</div>
-			<div class="topbar">
-				<h3>Contacts</h3>
-				<div class="verticaline"></div>
-				<div class="primeTopTab">
-					<button id="tabs0" class="primeTopButtons" onclick="primeTopShowTab(this)">Online</button>
-					<button id="tabs1" class="primeTopButtons" onclick="primeTopShowTab(this)">All</button>
-					<button id="tabs2" class="primeTopButtons" onclick="primeTopShowTab(this)">Pending</button>
-					<button id="tabs3" class="primeTopButtons" onclick="primeTopShowTab(this)">Blocked</button>
-					<button id="tabs4" class="primeTopBuddy"   onclick="primeTopShowTab(this)">Add buddy</button>
-				</div>
-				<button class="help">?</button>
-			</div>
-			<div id="tabs-0" class="tabContent">
-				<header class="tabhead">
-					<h3 class="tabheading">ONLINE  −  0</h3>
-					<p class="tabheading">You do not have any contacts</p>
-				</header>
-			</div>
-			<div id="tabs-1" class="tabContent">
-				<header class="tabhead">
-					<h3 class="tabheading">ALL  −  0</h3>
-					<p class="tabheading">You do not have any contacts</p>
-				</header>
-			</div>
-			<div id="tabs-2" class="tabContent">
-				<header class="tabhead">
-					<h3 class="tabheading">PENDING  −  0</h3>
-					<p class="tabheading">You do not have any pending buddy requests</p>
-				</header>
-			</div>
-			<div id="tabs-3" class="tabContent">
-				<header class="tabhead">
-					<h3 class="tabheading">BLOCKED   −  0</h3>
-					<p class="tabsubtitle">You haven't blocked anyone</p>
-				</header>
-			</div>
-			<div id="tabs-4" class="tabContent">
-				<header class="tabhead">
-					<h3 class="tabheading">ADD BUDDY</h3>
-					<form class="newbuddy">
-						<p class="tabheading">XMPP ADDRESS</p>
-						<div class="inputWrapper">
-								<input id="jid" class="form-control" required="" type="text" name="jid" autofocus="" placeholder="user@domain.com" autocomplete="off" onclick="formOutline(event, '');">
-								<button class="addbuddyButton" type="button">Add buddy</button>
-						</div>
-					</form>
-				</header>
-			</div>
-		</div>
-		<div id="nav-1" class="navContent">
 		</div>
 	</body>
 </html>

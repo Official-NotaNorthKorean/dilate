@@ -6,3 +6,4 @@ TO DO
 -	Create settings menu
 -	Create help menu
 -	The style of a button is reset when pressed; fix this [ ✔ ]
+-	Add JS for contacts
